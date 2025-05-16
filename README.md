@@ -25,7 +25,7 @@ Architecture(BILSTM-CNN with emb + caps)
     2) Keras
     3) Tensorflow
 
-## Inference on trained model
+## Use predict.py for inference
 
 ```python
 from ner import Parser
