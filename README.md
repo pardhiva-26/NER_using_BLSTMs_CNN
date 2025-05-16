@@ -1,4 +1,4 @@
-# Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs
+# Named-Entity-Recognition
 
 A keras implementation of Bidirectional-LSTM_CNNs for Named-Entity-Recoganition. The original paper can be found at https://arxiv.org/abs/1511.08308
 
