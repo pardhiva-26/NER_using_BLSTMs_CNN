@@ -16,7 +16,7 @@ Architecture(BILSTM-CNN with emb + caps)
 ## To run the script
 
 ```bash
-   python3 nn.py
+   python main.py
 ```
 
 ## Requirements
@@ -28,7 +28,7 @@ Architecture(BILSTM-CNN with emb + caps)
 ## Use predict.py for inference
 
 ```python
-from ner import Parser
+from ner_parser import Parser
 
 p = Parser()
 
