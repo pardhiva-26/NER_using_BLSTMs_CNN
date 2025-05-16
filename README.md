@@ -21,7 +21,7 @@ Architecture(BILSTM-CNN with emb + caps)
 
 ## Requirements
 
-    0) nltk
+    1) nltk
     2) Keras
     3) Tensorflow
 
