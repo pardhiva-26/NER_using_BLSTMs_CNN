@@ -1,5 +1,5 @@
 
-from ner import Parser
+from ner_parser import Parser
 
 p = Parser()
 
