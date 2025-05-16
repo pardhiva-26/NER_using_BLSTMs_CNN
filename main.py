@@ -4,7 +4,7 @@ import tensorflow
 from tensorflow import keras
 from keras.models import Model
 from keras.layers import TimeDistributed,Conv1D,Dense,Embedding,Input,Dropout,LSTM,Bidirectional,MaxPooling1D,Flatten,concatenate
-from prepro import readfile,createBatches,createMatrices,iterate_minibatches,addCharInformatioin,padding
+from preprocessing import readfile,createBatches,createMatrices,iterate_minibatches,addCharInformatioin,padding
 from keras.utils import Progbar
 from keras.preprocessing.sequence import pad_sequences
 from keras.initializers import RandomUniform
