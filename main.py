@@ -46,6 +46,9 @@ for dataset in [trainSentences, devSentences, testSentences]:
             labelSet.add(label)
             words[token.lower()] = True
 
+# for d in labelSet:
+#     print(d)               --> to know what are the different tags in the data.....
+
 # :: Create a mapping for the labels ::
 label2Idx = {}
 for label in labelSet:
