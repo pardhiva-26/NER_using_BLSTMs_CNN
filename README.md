@@ -37,3 +37,51 @@ p.load_models("models/")
 p.predict("Pardhiva lives in India")
 ##Output [('Pardhiva', 'B-PER'), ('lives', 'O'), ('in', 'O'), ('India', 'B-LOC')]
 ```
+
+🌐 Frontend Web App (React + Vite)
+We also provide a React + Vite web interface for Named Entity Recognition.
+
+🔹 Features:
+Input custom text and view real-time NER predictions
+
+Entity highlights by type (PERSON, ORG, LOC, MISC)
+
+Bootstrap-powered responsive UI
+
+📦 Running the Frontend Locally
+bash
+Copy
+Edit
+cd front-end
+npm install
+npm run dev
+The frontend expects a backend running at:
+http://127.0.0.1:5000/predict
+
+You can modify the base URL inside NERInput.jsx if needed.
+
+🧪 Backend NER Model
+To run the backend prediction API:
+
+bash
+Copy
+Edit
+python predict.py
+This will start a Flask server that listens for POST requests at /predict.
+
+Example request format:
+
+json
+Copy
+Edit
+{
+  "text": "Virat Kohli plays for RCB in Bengaluru."
+}
+Expected response:
+
+json
+Copy
+Edit
+{
+  "entities": [["Virat", "B-PER"], ["Kohli", "I-PER"], ["RCB", "B-ORG"], ["Bengaluru", "B-LOC"]]
+}
