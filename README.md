@@ -1,39 +1,12 @@
-# Named-Entity-Recognition
+# React + Vite
 
-A keras implementation of Bidirectional-LSTM_CNNs for Named-Entity-Recoganition. The original paper can be found at https://arxiv.org/abs/1511.08308
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The implementation differs from the original paper in the following ways :
+Currently, two official plugins are available:
 
-1. lexicons are not considered
-2. Bucketing is used to speed up the training
-3. nadam optimizer used instead of SGD
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Result
+## Expanding the ESLint configuration
 
-The model produces a test F1_score of 90.9 % with ~70 epochs. The results produced in the paper for the given architecture is 91.14
-Architecture(BILSTM-CNN with emb + caps)
-
-## To run the script
-
-```bash
-   python main.py
-```
-
-## Requirements
-
-    1) nltk
-    2) Keras
-    3) Tensorflow
-
-## Use predict.py for inference
-
-```python
-from ner_parser import Parser
-
-p = Parser()
-
-p.load_models("models/")
-
-p.predict("Pardhiva lives in India")
-##Output [('Pardhiva', 'B-PER'), ('lives', 'O'), ('in', 'O'), ('India', 'B-LOC')]
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
