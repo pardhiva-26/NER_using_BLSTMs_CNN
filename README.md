@@ -57,12 +57,12 @@ npm install
 npm run dev
 ```
 
-##🧪 Backend NER Model
+### 🧪 Backend NER Model
 To run the backend prediction API:
 python app.py
 This will start a Flask server that listens for POST requests at /predict.
 
-##Example request format:
+### Example request format:
 {
   "text": "Virat Kohli plays for RCB in Bengaluru."
 }
