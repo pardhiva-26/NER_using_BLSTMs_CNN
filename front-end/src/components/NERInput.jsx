@@ -10,7 +10,7 @@ function NERInput({ setEntities }) {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/predict", {
+      const response = await axios.post("https://web-production-26bd.up.railway.app/predict", {
         text,
       });
       setEntities(response.data.entities);
