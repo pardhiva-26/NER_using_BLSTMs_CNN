@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from ner_parser import Parser
 from flask_cors import CORS
+import nltk
+nltk.data.path.append("nltk_data") 
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend-backend communication
