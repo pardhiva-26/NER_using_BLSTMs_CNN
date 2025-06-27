@@ -63,7 +63,7 @@ python app.py.
 
 This will start a Flask server that listens for POST requests at /predict.
 
-### Web App deployed
+### 🚀 Web App Deployed
 
 you can run it at https://playful-choux-20abae.netlify.app/
 
