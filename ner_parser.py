@@ -4,6 +4,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 from nltk import word_tokenize
+import nltk
+nltk.data.path.append('./nltk_data')
 
 class Parser:
 
