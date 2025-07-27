@@ -62,10 +62,3 @@ To run the backend prediction API:
 python app.py.
 
 This will start a Flask server that listens for POST requests at /predict.
-
-### 🚀 Web App Deployed
-
-you can run it at https://playful-choux-20abae.netlify.app/
-
-Enter a sentence to get all entities marked for the words in your sentence
-
