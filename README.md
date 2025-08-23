@@ -1,17 +1,10 @@
 # Named-Entity-Recognition
 
-A keras implementation of Bidirectional-LSTM_CNNs for Named-Entity-Recoganition. The original paper can be found at https://arxiv.org/abs/1511.08308
-
-The implementation differs from the original paper in the following ways :
-
-1. lexicons are not considered
-2. Bucketing is used to speed up the training
-3. nadam optimizer used instead of SGD
+A keras implementation of Bidirectional-LSTM_CNNs for Named-Entity-Recoganition.
 
 # Result
 
-The model produces a test F1_score of 90.9 % with ~70 epochs. The results produced in the paper for the given architecture is 91.14
-Architecture(BILSTM-CNN with emb + caps)
+The model produces a test F1_score of 92.4 % with ~70 epochs.
 
 ## To run the script
 
@@ -62,3 +55,4 @@ To run the backend prediction API:
 python app.py.
 
 This will start a Flask server that listens for POST requests at /predict.
+
